@@ -1,0 +1,100 @@
+/* ===========================*\
+        Reset
+*\=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(29, 60, 156, 0.5), rgba(29, 60, 156, 0.5)), url('images/mobile\ Morocco.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+/* ===========================*\
+        Container
+*\=========================== */
+.center-text {
+  text-align: center;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.container {
+  padding-top: 5rem;
+}
+
+.container h1 {
+  padding: 2rem;
+  font-size: 5rem;
+}
+
+.container h3 {
+  font-size: 2.5rem;
+}
+
+.container ol {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.container .center-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* ===========================*\
+        Desktop
+*\=========================== */
+
+@media all and (min-width: 768px) {
+  /* body */
+  body {
+    background-image: linear-gradient(rgba(29, 60, 156, 0.5), rgba(29, 60, 156, 0.5)), url('images/Morocco\ Plates.jpg');
+  }
+
+  /* ===========================*\
+        Container
+*\=========================== */
+
+  .container {
+    animation: anna 2s;
+  }
+
+  @keyframes anna {
+    from {
+      transform: translateX(-200%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .container h1 {
+    font-size: 7rem;
+    padding: 7rem;
+  }
+
+  .container h3 {
+    font-size: 5rem;
+  }
+
+  .container ol {
+    font-size: 3rem;
+  }
+}
